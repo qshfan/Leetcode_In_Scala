@@ -11,5 +11,4 @@ object HelloWorldNTimes extends App {
       f(n-1)
     }
   }
-
 }

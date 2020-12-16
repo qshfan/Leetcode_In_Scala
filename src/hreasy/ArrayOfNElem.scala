@@ -1,0 +1,5 @@
+package hreasy
+
+object ArrayOfNElem {
+
+}

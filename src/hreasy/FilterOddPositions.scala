@@ -16,7 +16,7 @@ object FilterOddPositions extends App {
   def f3(arr: List[Int]): List[Int] = arr.zipWithIndex filter { v => (v._2 + 1) % 2 == 0 } map { _._1 }
 
   def f4(arr: List[Int]): List[Int] = arr match {
-    case x :: y :: xs => y :: f(xs)
+    case x :: y :: xs => y :: f4(xs)
     case _ => Nil
   }
 
@@ -24,4 +24,5 @@ object FilterOddPositions extends App {
   println(f(A))
   println(f2(A))
   println(f3(A))
+  println(f4(A))
 }
